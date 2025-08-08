@@ -27,7 +27,7 @@ const Navbar = () => {
           <li className="hover:text-orange-600 transition-colors">Products</li>
         </NavLink>
 
-        <NavLink to='/todaydeals'>
+        <NavLink to='/todayDeals'>
           <li className="hover:text-orange-600 transition-colors">Today's Deals</li>
         </NavLink>
       </ul>
