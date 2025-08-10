@@ -49,8 +49,13 @@ const Navbar = () => {
         
         {/* Sign Up / Login */}
         <div className="hidden md:flex gap-2">
+          <Link to='/signup'>
           <button className='text-sm font-medium px-3 py-1 rounded hover:bg-gray-100'>SignUp</button>
+          </Link>
+        <Link to='/login'>
           <button className='text-sm font-medium px-3 py-1 rounded bg-orange-600 text-white hover:bg-orange-700'>Login</button>
+        
+        </Link>
         </div>
 
         {/* Profile icon */}
