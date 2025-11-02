@@ -4,12 +4,9 @@ export const productsData = {
     {
       id: 1,
       name: "Apple MacBook Air M4",
-      brand: "Apple",
       price: 1299,
-      originalPrice: 1399,
       description: "Best Overall Laptop 2025 with Apple's latest M4 chip",
       rating: 4.8,
-      reviews: 1247,
       image: "https://images.unsplash.com/photo-1541807084-5c52b6b3adef?w=400&h=400&fit=crop",
       images: [
         "https://images.unsplash.com/photo-1541807084-5c52b6b3adef?w=400&h=400&fit=crop",
