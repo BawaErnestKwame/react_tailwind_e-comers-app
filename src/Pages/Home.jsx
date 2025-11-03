@@ -6,7 +6,7 @@ import mouse from '../assets/headerimage5.png';
 import iphone from '../assets/headerimage4.png';
 import keyboard from '../assets/headerimage6.png';
 import DeliveryInfor from '../Components/DeliveryInfor';
-import TopProduct from '../HomeFeatures/TopProduct';
+import Category from '../Category/Category';
 
 const heroSlides = [
   { name: "Laptop", title: "GET QUALITY PRODUCT FROM GEARUP APP", description: "High performance laptop for work and gaming.", image: laptop },
@@ -97,7 +97,7 @@ const Home = () => {
 
       {/* Delivery Info Section */}
       <DeliveryInfor />
-      <TopProduct />
+      <Category />
     </>
   );
 };

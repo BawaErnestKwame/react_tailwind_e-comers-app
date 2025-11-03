@@ -592,9 +592,9 @@ export const productsData = {
       category: "sneakers",
       subcategory: "basketball",
       inStock: true,
-      stockQuantity: 45,
-      rating: 4.8,
-      reviews: 2341,
+      stockQuantity: 78,
+      rating: 4.4,
+      reviews: 1234,
       image: "https://images.unsplash.com/photo-1551698618-1dfe5d97d256?w=400&h=400&fit=crop",
       images: [
         "https://images.unsplash.com/photo-1551698618-1dfe5d97d256?w=400&h=400&fit=crop",
@@ -633,15 +633,611 @@ export const productsData = {
       specifications: {
         material: "Primeknit upper",
         sole: "Boost midsole",
+        closure: "Lace-up",
+        technology: "Continental rubber outsole",
+        weight: "10.9 oz"
+      },
+      sizes: ["7", "7.5", "8", "8.5", "9", "9.5", "10", "10.5", "11", "11.5", "12"],
+      colors: ["Core Black", "Cloud White", "Solar Red", "Triple White"],
+      tags: ["running", "boost", "adidas", "performance"]
     },
-}
+    {
+      id: 3,
+      name: "Nike Air Max 90",
+      brand: "Nike",
+      price: 130,
+      originalPrice: 140,
+      description: "Iconic Lifestyle Sneaker with visible Air unit",
+      category: "sneakers",
+      subcategory: "lifestyle",
+      inStock: true,
+      stockQuantity: 89,
+      rating: 4.7,
+      reviews: 3214,
+      image: "https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=400&h=400&fit=crop",
+      images: [
+        "https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=400&h=400&fit=crop",
+        "https://images.unsplash.com/photo-1549298916-b41d501d3772?w=400&h=400&fit=crop"
+      ],
+      specifications: {
+        material: "Leather and mesh",
+        sole: "Rubber with Air-Sole unit",
+        closure: "Lace-up",
+        height: "Low-top",
+        technology: "Max Air cushioning"
+      },
+      sizes: ["6", "7", "7.5", "8", "8.5", "9", "9.5", "10", "10.5", "11", "12"],
+      colors: ["White/Red", "Triple Black", "Infrared", "Hyper Grape"],
+      tags: ["lifestyle", "air-max", "nike", "retro"]
+    },
+    {
+      id: 4,
+      name: "New Balance 990v6",
+      brand: "New Balance",
+      price: 185,
+      originalPrice: 185,
+      description: "Made in USA Premium Comfort",
+      category: "sneakers",
+      subcategory: "lifestyle",
+      inStock: true,
+      stockQuantity: 34,
+      rating: 4.8,
+      reviews: 892,
+      image: "https://images.unsplash.com/photo-1539185441755-769473a23570?w=400&h=400&fit=crop",
+      images: [
+        "https://images.unsplash.com/photo-1539185441755-769473a23570?w=400&h=400&fit=crop",
+        "https://images.unsplash.com/photo-1460353581641-37baddab0fa2?w=400&h=400&fit=crop"
+      ],
+      specifications: {
+        material: "Pigskin and mesh upper",
+        sole: "ENCAP midsole",
+        closure: "Lace-up",
+        madeIn: "USA",
+        technology: "ABZORB cushioning"
+      },
+      sizes: ["7", "7.5", "8", "8.5", "9", "9.5", "10", "10.5", "11", "11.5", "12"],
+      colors: ["Grey", "Navy", "Black", "Marblehead"],
+      tags: ["lifestyle", "made-in-usa", "comfort", "new-balance"]
+    },
+    {
+      id: 5,
+      name: "Yeezy Boost 350 V2",
+      brand: "Adidas",
+      price: 230,
+      originalPrice: 230,
+      description: "Iconic Kanye Design with Primeknit",
+      category: "sneakers",
+      subcategory: "lifestyle",
+      inStock: false,
+      stockQuantity: 0,
+      rating: 4.5,
+      reviews: 4567,
+      image: "https://images.unsplash.com/photo-1549298916-b41d501d3772?w=400&h=400&fit=crop",
+      images: [
+        "https://images.unsplash.com/photo-1549298916-b41d501d3772?w=400&h=400&fit=crop",
+        "https://images.unsplash.com/photo-1460353581641-37baddab0fa2?w=400&h=400&fit=crop"
+      ],
+      specifications: {
+        material: "Primeknit upper",
+        sole: "Boost midsole",
+        closure: "Lace-up",
+        technology: "Boost cushioning",
+        style: "Slip-on design with laces"
+      },
+      sizes: ["7", "8", "9", "10", "11", "12"],
+      colors: ["Bone", "Zebra", "Bred", "Static"],
+      tags: ["yeezy", "boost", "lifestyle", "limited"]
+    },
+    {
+      id: 6,
+      name: "Converse Chuck Taylor All Star",
+      brand: "Converse",
+      price: 60,
+      originalPrice: 65,
+      description: "Timeless Classic Canvas Sneaker",
+      category: "sneakers",
+      subcategory: "casual",
+      inStock: true,
+      stockQuantity: 156,
+      rating: 4.5,
+      reviews: 8923,
+      image: "https://images.unsplash.com/photo-1514989940723-e8e51635b782?w=400&h=400&fit=crop",
+      images: [
+        "https://images.unsplash.com/photo-1514989940723-e8e51635b782?w=400&h=400&fit=crop",
+        "https://images.unsplash.com/photo-1549298916-b41d501d3772?w=400&h=400&fit=crop"
+      ],
+      specifications: {
+        material: "Canvas upper",
+        sole: "Rubber",
+        closure: "Lace-up",
+        height: "High-top",
+        style: "Classic basketball silhouette"
+      },
+      sizes: ["6", "7", "7.5", "8", "8.5", "9", "9.5", "10", "10.5", "11", "12", "13"],
+      colors: ["Black", "White", "Red", "Navy", "Optical White"],
+      tags: ["casual", "canvas", "classic", "converse"]
+    },
+    {
+      id: 7,
+      name: "Vans Old Skool",
+      brand: "Vans",
+      price: 70,
+      originalPrice: 75,
+      description: "Skate Classic with Side Stripe",
+      category: "sneakers",
+      subcategory: "skate",
+      inStock: true,
+      stockQuantity: 112,
+      rating: 4.6,
+      reviews: 5634,
+      image: "https://images.unsplash.com/photo-1525966222134-fcfa99b8ae77?w=400&h=400&fit=crop",
+      images: [
+        "https://images.unsplash.com/photo-1525966222134-fcfa99b8ae77?w=400&h=400&fit=crop",
+        "https://images.unsplash.com/photo-1549298916-b41d501d3772?w=400&h=400&fit=crop"
+      ],
+      specifications: {
+        material: "Canvas and suede",
+        sole: "Waffle rubber outsole",
+        closure: "Lace-up",
+        height: "Low-top",
+        style: "Padded collar"
+      },
+      sizes: ["6", "7", "7.5", "8", "8.5", "9", "9.5", "10", "10.5", "11", "12"],
+      colors: ["Black/White", "Navy", "Checkerboard", "All Black"],
+      tags: ["skate", "classic", "vans", "streetwear"]
+    },
+    {
+      id: 8,
+      name: "Puma Suede Classic",
+      brand: "Puma",
+      price: 75,
+      originalPrice: 80,
+      description: "Retro Style with Premium Suede",
+      category: "sneakers",
+      subcategory: "lifestyle",
+      inStock: true,
+      stockQuantity: 78,
+      rating: 4.4,
+      reviews: 2156,
+      image: "https://images.unsplash.com/photo-1608231387042-66d1773070a5?w=400&h=400&fit=crop",
+      images: [
+        "https://images.unsplash.com/photo-1608231387042-66d1773070a5?w=400&h=400&fit=crop",
+        "https://images.unsplash.com/photo-1460353581641-37baddab0fa2?w=400&h=400&fit=crop"
+      ],
+      specifications: {
+        material: "Suede upper",
+        sole: "Rubber",
+        closure: "Lace-up",
+        height: "Low-top",
+        style: "Classic silhouette"
+      },
+      sizes: ["7", "7.5", "8", "8.5", "9", "9.5", "10", "10.5", "11", "12"],
+      colors: ["Team Regal Red", "Peacoat Blue", "Black", "Forest Night"],
+      tags: ["lifestyle", "suede", "retro", "puma"]
+    },
+    {
+      id: 9,
+      name: "Nike Blazer Mid '77",
+      brand: "Nike",
+      price: 105,
+      originalPrice: 110,
+      description: "Vintage Basketball Style",
+      category: "sneakers",
+      subcategory: "lifestyle",
+      inStock: true,
+      stockQuantity: 62,
+      rating: 4.5,
+      reviews: 1789,
+      image: "https://images.unsplash.com/photo-1600185365926-3a2ce3cdb9eb?w=400&h=400&fit=crop",
+      images: [
+        "https://images.unsplash.com/photo-1600185365926-3a2ce3cdb9eb?w=400&h=400&fit=crop",
+        "https://images.unsplash.com/photo-1549298916-b41d501d3772?w=400&h=400&fit=crop"
+      ],
+      specifications: {
+        material: "Leather upper",
+        sole: "Rubber cupsole",
+        closure: "Lace-up",
+        height: "Mid-top",
+        style: "Vintage finish"
+      },
+      sizes: ["6", "7", "7.5", "8", "8.5", "9", "9.5", "10", "10.5", "11", "12"],
+      colors: ["White/Black", "Vintage White", "Habanero Red", "Photon Dust"],
+      tags: ["lifestyle", "vintage", "blazer", "nike"]
+    },
+    {
+      id: 10,
+      name: "Reebok Club C 85",
+      brand: "Reebok",
+      price: 80,
+      originalPrice: 90,
+      description: "Tennis-Inspired Clean Design",
+      category: "sneakers",
+      subcategory: "lifestyle",
+      inStock: true,
+      stockQuantity: 94,
+      rating: 4.4,
+      reviews: 2876,
+      image: "https://images.unsplash.com/photo-1595950653106-6c9ebd614d3a?w=400&h=400&fit=crop",
+      images: [
+        "https://images.unsplash.com/photo-1595950653106-6c9ebd614d3a?w=400&h=400&fit=crop",
+        "https://images.unsplash.com/photo-1460353581641-37baddab0fa2?w=400&h=400&fit=crop"
+      ],
+      specifications: {
+        material: "Leather upper",
+        sole: "Rubber outsole",
+        closure: "Lace-up",
+        height: "Low-top",
+        style: "Tennis court classic"
+      },
+      sizes: ["6", "7", "7.5", "8", "8.5", "9", "9.5", "10", "10.5", "11", "12"],
+      colors: ["White/Green", "White/Navy", "All White", "Black"],
+      tags: ["lifestyle", "tennis", "clean", "reebok"]
+    },
+    {
+      id: 11,
+      name: "Hoka Clifton 9",
+      brand: "Hoka",
+      price: 145,
+      originalPrice: 145,
+      description: "Maximum Cushion Running Shoe",
+      category: "sneakers",
+      subcategory: "running",
+      inStock: true,
+      stockQuantity: 48,
+      rating: 4.7,
+      reviews: 1543,
+      image: "https://images.unsplash.com/photo-1606107557195-0e29a4b5b4aa?w=400&h=400&fit=crop",
+      images: [
+        "https://images.unsplash.com/photo-1606107557195-0e29a4b5b4aa?w=400&h=400&fit=crop",
+        "https://images.unsplash.com/photo-1460353581641-37baddab0fa2?w=400&h=400&fit=crop"
+      ],
+      specifications: {
+        material: "Engineered mesh",
+        sole: "EVA midsole",
+        closure: "Lace-up",
+        technology: "Meta-Rocker geometry",
+        weight: "7.9 oz"
+      },
+      sizes: ["7", "7.5", "8", "8.5", "9", "9.5", "10", "10.5", "11", "11.5", "12"],
+      colors: ["White/White", "Black/White", "Harbor Mist", "Electric Aqua"],
+      tags: ["running", "cushion", "performance", "hoka"]
+    },
+    {
+      id: 12,
+      name: "On Cloudmonster",
+      brand: "On",
+      price: 170,
+      originalPrice: 170,
+      description: "Ultra-Cushioned with CloudTec",
+      category: "sneakers",
+      subcategory: "running",
+      inStock: true,
+      stockQuantity: 31,
+      rating: 4.6,
+      reviews: 967,
+      image: "https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=400&h=400&fit=crop",
+      images: [
+        "https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=400&h=400&fit=crop",
+        "https://images.unsplash.com/photo-1460353581641-37baddab0fa2?w=400&h=400&fit=crop"
+      ],
+      specifications: {
+        material: "Engineered mesh upper",
+        sole: "Helion superfoam",
+        closure: "Lace-up",
+        technology: "CloudTec in Helion",
+        weight: "8.82 oz"
+      },
+      sizes: ["7", "8", "8.5", "9", "9.5", "10", "10.5", "11", "12"],
+      colors: ["Undyed/White", "All Black", "Glacier/Volt", "Cobble/Pebble"],
+      tags: ["running", "cloudtec", "cushion", "on-running"]
+    }
+  ],
 
-    ]
-
-    
-}
-
-
-
-
-
+  phones: [
+    {
+      id: 1,
+      name: "iPhone 16 Pro Max",
+      brand: "Apple",
+      price: 1199,
+      originalPrice: 1199,
+      description: "Best Overall Smartphone with A18 Pro chip",
+      category: "phones",
+      subcategory: "flagship",
+      inStock: true,
+      stockQuantity: 87,
+      rating: 4.9,
+      reviews: 3421,
+      image: "https://images.unsplash.com/photo-1592286927505-2fd2ba0cda3c?w=400&h=400&fit=crop",
+      images: [
+        "https://images.unsplash.com/photo-1592286927505-2fd2ba0cda3c?w=400&h=400&fit=crop",
+        "https://images.unsplash.com/photo-1611472173362-3f53dbd65d80?w=400&h=400&fit=crop",
+        "https://images.unsplash.com/photo-1510557880182-3d4d3cba35a5?w=400&h=400&fit=crop"
+      ],
+      specifications: {
+        processor: "A18 Pro",
+        ram: "8GB",
+        storage: "256GB",
+        display: "6.9-inch Super Retina XDR",
+        camera: "48MP Main + 48MP Ultra Wide + 12MP Telephoto",
+        battery: "4685 mAh",
+        os: "iOS 18"
+      },
+      colors: ["Natural Titanium", "Blue Titanium", "White Titanium", "Black Titanium"],
+      tags: ["flagship", "premium", "ios", "5g"]
+    },
+    {
+      id: 2,
+      name: "Samsung Galaxy S25 Ultra",
+      brand: "Samsung",
+      price: 1299,
+      originalPrice: 1299,
+      description: "Best Android Phone with S Pen",
+      category: "phones",
+      subcategory: "flagship",
+      inStock: true,
+      stockQuantity: 64,
+      rating: 4.8,
+      reviews: 2876,
+      image: "https://images.unsplash.com/photo-1610945415295-d9bbf067e59c?w=400&h=400&fit=crop",
+      images: [
+        "https://images.unsplash.com/photo-1610945415295-d9bbf067e59c?w=400&h=400&fit=crop",
+        "https://images.unsplash.com/photo-1598327105666-5b89351aff97?w=400&h=400&fit=crop"
+      ],
+      specifications: {
+        processor: "Snapdragon 8 Gen 3",
+        ram: "12GB",
+        storage: "256GB",
+        display: "6.8-inch Dynamic AMOLED 2X",
+        camera: "200MP Main + 50MP Periscope + 12MP Ultra Wide",
+        battery: "5000 mAh",
+        os: "Android 15"
+      },
+      colors: ["Titanium Black", "Titanium Gray", "Titanium Violet", "Titanium Yellow"],
+      tags: ["flagship", "android", "s-pen", "camera"]
+    },
+    {
+      id: 3,
+      name: "Google Pixel 9 Pro",
+      brand: "Google",
+      price: 999,
+      originalPrice: 999,
+      description: "Best Camera Phone with AI features",
+      category: "phones",
+      subcategory: "flagship",
+      inStock: true,
+      stockQuantity: 52,
+      rating: 4.7,
+      reviews: 1987,
+      image: "https://images.unsplash.com/photo-1598327105666-5b89351aff97?w=400&h=400&fit=crop",
+      images: [
+        "https://images.unsplash.com/photo-1598327105666-5b89351aff97?w=400&h=400&fit=crop",
+        "https://images.unsplash.com/photo-1610945415295-d9bbf067e59c?w=400&h=400&fit=crop"
+      ],
+      specifications: {
+        processor: "Google Tensor G4",
+        ram: "12GB",
+        storage: "128GB",
+        display: "6.3-inch LTPO OLED",
+        camera: "50MP Main + 48MP Telephoto + 48MP Ultra Wide",
+        battery: "4700 mAh",
+        os: "Android 15"
+      },
+      colors: ["Obsidian", "Porcelain", "Hazel", "Rose"],
+      tags: ["flagship", "camera", "ai", "pure-android"]
+    },
+    {
+      id: 4,
+      name: "OnePlus 12",
+      brand: "OnePlus",
+      price: 799,
+      originalPrice: 899,
+      description: "Best Value Flagship with fast charging",
+      category: "phones",
+      subcategory: "flagship",
+      inStock: true,
+      stockQuantity: 43,
+      rating: 4.6,
+      reviews: 1432,
+      image: "https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?w=400&h=400&fit=crop",
+      images: [
+        "https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?w=400&h=400&fit=crop",
+        "https://images.unsplash.com/photo-1598327105666-5b89351aff97?w=400&h=400&fit=crop"
+      ],
+      specifications: {
+        processor: "Snapdragon 8 Gen 3",
+        ram: "12GB",
+        storage: "256GB",
+        display: "6.82-inch AMOLED 120Hz",
+        camera: "50MP Main + 64MP Periscope + 48MP Ultra Wide",
+        battery: "5400 mAh",
+        charging: "100W SuperVOOC",
+        os: "OxygenOS 14"
+      },
+      colors: ["Flowy Emerald", "Silky Black"],
+      tags: ["flagship", "fast-charging", "value", "android"]
+    },
+    {
+      id: 5,
+      name: "iPhone 16",
+      brand: "Apple",
+      price: 799,
+      originalPrice: 799,
+      description: "Best Mid-Range iPhone with great performance",
+      category: "phones",
+      subcategory: "mid-range",
+      inStock: true,
+      stockQuantity: 124,
+      rating: 4.7,
+      reviews: 4562,
+      image: "https://images.unsplash.com/photo-1592286927505-2fd2ba0cda3c?w=400&h=400&fit=crop",
+      images: [
+        "https://images.unsplash.com/photo-1592286927505-2fd2ba0cda3c?w=400&h=400&fit=crop",
+        "https://images.unsplash.com/photo-1510557880182-3d4d3cba35a5?w=400&h=400&fit=crop"
+      ],
+      specifications: {
+        processor: "A18",
+        ram: "6GB",
+        storage: "128GB",
+        display: "6.1-inch Super Retina XDR",
+        camera: "48MP Main + 12MP Ultra Wide",
+        battery: "3561 mAh",
+        os: "iOS 18"
+      },
+      colors: ["Black", "White", "Pink", "Teal", "Ultramarine"],
+      tags: ["mid-range", "ios", "reliable", "apple"]
+    },
+    {
+      id: 6,
+      name: "Samsung Galaxy A55",
+      brand: "Samsung",
+      price: 449,
+      originalPrice: 499,
+      description: "Best Mid-Range Android with great display",
+      category: "phones",
+      subcategory: "mid-range",
+      inStock: true,
+      stockQuantity: 156,
+      rating: 4.5,
+      reviews: 2341,
+      image: "https://images.unsplash.com/photo-1610945415295-d9bbf067e59c?w=400&h=400&fit=crop",
+      images: [
+        "https://images.unsplash.com/photo-1610945415295-d9bbf067e59c?w=400&h=400&fit=crop",
+        "https://images.unsplash.com/photo-1598327105666-5b89351aff97?w=400&h=400&fit=crop"
+      ],
+      specifications: {
+        processor: "Exynos 1480",
+        ram: "8GB",
+        storage: "128GB",
+        display: "6.6-inch Super AMOLED",
+        camera: "50MP Main + 12MP Ultra Wide + 5MP Macro",
+        battery: "5000 mAh",
+        os: "Android 14"
+      },
+      colors: ["Awesome Navy", "Awesome Lilac", "Awesome Iceblue"],
+      tags: ["mid-range", "android", "amoled", "value"]
+    },
+    {
+      id: 7,
+      name: "Google Pixel 8a",
+      brand: "Google",
+      price: 499,
+      originalPrice: 499,
+      description: "Best Budget Phone with flagship camera",
+      category: "phones",
+      subcategory: "budget",
+      inStock: true,
+      stockQuantity: 98,
+      rating: 4.6,
+      reviews: 1876,
+      image: "https://images.unsplash.com/photo-1598327105666-5b89351aff97?w=400&h=400&fit=crop",
+      images: [
+        "https://images.unsplash.com/photo-1598327105666-5b89351aff97?w=400&h=400&fit=crop",
+        "https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?w=400&h=400&fit=crop"
+      ],
+      specifications: {
+        processor: "Google Tensor G3",
+        ram: "8GB",
+        storage: "128GB",
+        display: "6.1-inch OLED",
+        camera: "64MP Main + 13MP Ultra Wide",
+        battery: "4492 mAh",
+        os: "Android 14"
+      },
+      colors: ["Obsidian", "Porcelain", "Bay", "Aloe"],
+      tags: ["budget", "camera", "ai", "google"]
+    },
+    {
+      id: 8,
+      name: "Xiaomi 14T Pro",
+      brand: "Xiaomi",
+      price: 699,
+      originalPrice: 799,
+      description: "Best Camera-Focused with Leica optics",
+      category: "phones",
+      subcategory: "mid-range",
+      inStock: true,
+      stockQuantity: 37,
+      rating: 4.5,
+      reviews: 892,
+      image: "https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?w=400&h=400&fit=crop",
+      images: [
+        "https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?w=400&h=400&fit=crop",
+        "https://images.unsplash.com/photo-1598327105666-5b89351aff97?w=400&h=400&fit=crop"
+      ],
+      specifications: {
+        processor: "MediaTek Dimensity 9300+",
+        ram: "12GB",
+        storage: "256GB",
+        display: "6.67-inch AMOLED 144Hz",
+        camera: "50MP Leica Main + 50MP Telephoto + 12MP Ultra Wide",
+        battery: "5000 mAh",
+        charging: "120W HyperCharge",
+        os: "HyperOS"
+      },
+      colors: ["Titan Black", "Titan Blue", "Titan Gray"],
+      tags: ["camera", "leica", "fast-charging", "xiaomi"]
+    },
+    {
+      id: 9,
+      name: "Nothing Phone (2a)",
+      brand: "Nothing",
+      price: 349,
+      originalPrice: 399,
+      description: "Best Design-Focused Budget Phone",
+      category: "phones",
+      subcategory: "budget",
+      inStock: true,
+      stockQuantity: 45,
+      rating: 4.4,
+      reviews: 892,
+      image: "https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?w=400&h=400&fit=crop",
+      images: [
+        "https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?w=400&h=400&fit=crop",
+        "https://images.unsplash.com/photo-1598327105666-5b89351aff97?w=400&h=400&fit=crop"
+      ],
+      specifications: {
+        processor: "MediaTek Dimensity 7200 Pro",
+        ram: "8GB",
+        storage: "128GB",
+        display: "6.7-inch AMOLED 120Hz",
+        camera: "50MP Main + 50MP Ultra Wide",
+        battery: "5000 mAh",
+        os: "Nothing OS 2.5",
+        glyph: "Glyph Interface"
+      },
+      colors: ["White", "Black"],
+      tags: ["budget", "design", "unique", "nothing"]
+    },
+    {
+      id: 10,
+      name: "Motorola Edge 50 Pro",
+      brand: "Motorola",
+      price: 599,
+      originalPrice: 699,
+      description: "Best Clean Android Experience",
+      category: "phones",
+      subcategory: "mid-range",
+      inStock: true,
+      stockQuantity: 41,
+      rating: 4.4,
+      reviews: 756,
+      image: "https://images.unsplash.com/photo-1610945415295-d9bbf067e59c?w=400&h=400&fit=crop",
+      images: [
+        "https://images.unsplash.com/photo-1610945415295-d9bbf067e59c?w=400&h=400&fit=crop",
+        "https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?w=400&h=400&fit=crop"
+      ],
+      specifications: {
+        processor: "Snapdragon 7 Gen 3",
+        ram: "12GB",
+        storage: "256GB",
+        display: "6.7-inch pOLED 144Hz",
+        camera: "50MP Main + 13MP Ultra Wide + 10MP Telephoto",
+        battery: "4500 mAh",
+        charging: "125W TurboPower",
+        os: "Android 14"
+      },
+      colors: ["Luxe Lavender", "Black Beauty", "Moonlight Pearl"],
+      tags: ["mid-range", "clean-android", "fast-charging", "motorola"]
+    }
+  ]
+};
