@@ -6,7 +6,7 @@ import SearchIcon from '@mui/icons-material/Search';
 
 const Navbar = () => {
   return (
-    <nav className='flex flex-wrap items-center justify-between px-4 sm:px-6 md:px-12 lg:px-24 py-4 bg-white shadow-md h-20'>
+    <nav className='flex flex-wrap items-center fixed top-0 right-0 left-0 z-1000 justify-between px-4 sm:px-6 md:px-12 lg:px-24 py-4 bg-white shadow-md h-20'>
       
       {/* Logo */}
 

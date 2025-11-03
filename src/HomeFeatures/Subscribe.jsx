@@ -4,7 +4,7 @@ import keyboard from '../assets/headerimage6.png'
 
 const Subscribe = () => {
   return (
-    <div className='relative overflow-hidden rounded-xl shadow-lg my-10'>
+    <div className='relative overflow-hidden rounded-xl shadow-lg my-10 -z-20'>
       
       {/* Background Image Layer with Opacity */}
       <div

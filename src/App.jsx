@@ -12,6 +12,7 @@ import HeadSets from './Category/HeadSets';
 import Laptops from './Category/Laptops';
 import Phones from './Category/Phones';
 import Sneakers from './Category/Sneakers';
+import Footer from './Components/Footer'
 
 const App = () => {
   return (
@@ -31,7 +32,11 @@ const App = () => {
         <Route path='/signup' element={<SignUp />} />
         <Route path='/login' element={<Login />} />
       </Routes>
+
+      <Footer/>
     </>
+
+    
   );
 };
 
