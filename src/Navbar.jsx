@@ -59,9 +59,15 @@ const Navbar = () => {
         </div>
 
         {/* Profile icon */}
-        <div className="cursor-pointer hover:text-orange-600">
-          <PersonOutlineIcon />
-        </div>
+     <div className="relative group flex items-center gap-2 cursor-pointer">
+  <PersonOutlineIcon className="text-gray-600 group-hover:text-orange-600 transition-colors" />
+
+  {/* Hidden phone number — shows only on hover */}
+  <p className="absolute top-6 opacity-0 group-hover:opacity-100 text-orange-600 transition-opacity duration-300">
+    +233599316218
+  </p>
+  </div>
+
 
         {/* Cart icon with badge */}
       <Link to='/cartpage'>

@@ -13,6 +13,7 @@ import Laptops from './Category/Laptops';
 import Phones from './Category/Phones';
 import Sneakers from './Category/Sneakers';
 import Footer from './Components/Footer'
+import CartPage from './Pages/CartPage';
 
 const App = () => {
   return (
@@ -29,6 +30,8 @@ const App = () => {
         {/* Other pages */}
         <Route path='/products' element={<Products />} />
         <Route path='/todayDeals' element={<TodayDeals />} />
+        <Route path='/cartPage' element={<CartPage/>} />
+
         <Route path='/signup' element={<SignUp />} />
         <Route path='/login' element={<Login />} />
       </Routes>

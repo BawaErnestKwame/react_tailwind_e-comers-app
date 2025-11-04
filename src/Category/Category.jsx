@@ -1,8 +1,10 @@
 import React from 'react';
 import { NavLink, Outlet } from 'react-router-dom';
+import PercentageOff from '../Components/PercentageOff';
 
 const Category = () => {
   return (
+    <>
     <div className="px-4 md:px-14 lg:px-24 py-6 w-full flex flex-col items-center justify-center">
       <div className="text-center">
         <h1 className="text-xl font-bold">CATEGORY</h1>
@@ -58,6 +60,8 @@ const Category = () => {
 
       <Outlet />
     </div>
+    <PercentageOff/>
+    </>
   );
 };
 
