@@ -18,11 +18,11 @@ const TodayDeals = () => {
     .slice(0, 6);
 
   return (
-    <div className="px-4 md:px-14 lg:px-24 py-6 w-full">
+    <div className="px-4 md:px-14 lg:px-24 py-6 w-full mt-32">
       <div className="text-center mb-8">
         <h1 className="text-orange-500 font-bold text-sm">DEALS</h1>
         <h2 className="text-gray-900 text-3xl font-semibold mt-2 underline">
-          TODAY'S HOT DEALS 🔥
+          TODAY'S HOT DEALS
         </h2>
         <p className="text-gray-500 mt-2">
           Limited-time offers on top products — don’t miss out!

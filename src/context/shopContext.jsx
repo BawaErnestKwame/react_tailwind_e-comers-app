@@ -1,5 +1,5 @@
 import React, { createContext, useState } from "react";
-import { productsData } from "../data/productsData"; // adjust your path
+import { productsData } from "../data/productsData"; 
 
 // 1 Create the context
 export const ShopContext = createContext();

@@ -91,7 +91,6 @@ const Footer = () => {
         </div>
       </div>
 
-      {/* --- Divider + Copyright --- */}
       <div className="mt-8 border-t border-gray-700 pt-4 text-center text-sm text-gray-500">
         © {new Date().getFullYear()} GearUp. All rights reserved.
       </div>
