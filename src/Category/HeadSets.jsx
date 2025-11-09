@@ -2,7 +2,7 @@ import React, { useContext } from "react";
 import { ShopContext } from "../context/shopContext";
 
 const Headphone = () => {
-  const { products } = useContext(ShopContext);
+    const { products, addToCart } = useContext(ShopContext);
 
   // Safely access headsets array
   const headsets = products?.headsets || [];
@@ -33,7 +33,9 @@ const Headphone = () => {
 
             <div className="flex justify-between items-center mt-3">
               <p className="text-gray-700 font-semibold">${item.price}</p>
-              <button className="bg-orange-500 hover:bg-orange-600 px-4 py-1.5 rounded text-white font-medium text-sm transition">
+              <button
+              onClick={() => addToCart(item)}
+               className="bg-orange-500 hover:bg-orange-600 px-4 py-1.5 rounded text-white font-medium text-sm transition">
                 Add to Cart +
               </button>
             </div>

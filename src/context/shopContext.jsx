@@ -1,16 +1,40 @@
 import React, { createContext, useState } from "react";
 import { productsData } from "../data/productsData"; 
 
-// 1 Create the context
 export const ShopContext = createContext();
 
-// 2Create the provider
 export const ShopProvider = ({ children }) => {
-  // store all products in state (optional)
   const [products] = useState(productsData);
+  const [cartItems, setCartItems] = useState([]);
+
+  // Add to cart function
+  const addToCart = (product) => {
+    setCartItems((prevCart) => {
+      const existing = prevCart.find((item) => item.id === product.id);
+      if (existing) {
+        // increase quantity if already in cart
+        return prevCart.map((item) =>
+          item.id === product.id ? { ...item, quantity: item.quantity + 1 } : item
+        );
+      } else {
+        // add new product
+        return [...prevCart, { ...product, quantity: 1 }];
+      }
+    });
+  };
+
+  // Remove item
+  const removeFromCart = (id) => {
+    setCartItems((prevCart) => prevCart.filter((item) => item.id !== id));
+  };
+
+  // Get total cart count
+  const getCartCount = () => {
+    return cartItems.reduce((total, item) => total + item.quantity, 0);
+  };
 
   return (
-    <ShopContext.Provider value={{ products }}>
+    <ShopContext.Provider value={{ products, cartItems, addToCart, removeFromCart, getCartCount }}>
       {children}
     </ShopContext.Provider>
   );

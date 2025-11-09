@@ -2,7 +2,7 @@ import React, { useContext } from "react";
 import { ShopContext } from "../context/shopContext";
 
 const Laptops = () => {
-  const { products } = useContext(ShopContext);
+  const { products, addToCart } = useContext(ShopContext);
 
   // Safely access laptops array
   const laptops = products?.laptops || [];
@@ -27,18 +27,19 @@ const Laptops = () => {
             </h2>
             <p className="text-sm text-gray-500 mt-1">{item.description}</p>
             <div className="mt-2 text-sm text-yellow-500 flex gap-1">
-               <p className="text-gray-950">Rating:</p>
-               <p>{item.rating} / 5</p>
+              <p className="text-gray-950">Rating:</p>
+              <p>{item.rating} / 5</p>
             </div>
 
             <div className="flex justify-between items-center mt-3">
               <p className="text-gray-700 font-semibold">${item.price}</p>
-              <button className="bg-orange-500 hover:bg-orange-600 px-4 py-1.5 rounded text-white font-medium text-sm transition">
+              <button
+                onClick={() => addToCart(item)}
+                className="bg-orange-500 hover:bg-orange-600 px-4 py-1.5 rounded text-white font-medium text-sm transition"
+              >
                 Add to Cart +
               </button>
             </div>
-
-            
           </div>
         ))}
       </div>
