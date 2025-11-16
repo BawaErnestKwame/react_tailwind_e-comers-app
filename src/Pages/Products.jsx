@@ -2,18 +2,16 @@ import React, { useContext } from "react";
 import { ShopContext } from "../context/shopContext";
 
 const Products = () => {
-  // 1️⃣ Access global product data from context
-  const { products } = useContext(ShopContext);
+  const { products, addToCart } = useContext(ShopContext);
 
-  // 2️⃣ Combine all categories into one big array
   const allProducts = [
     ...(products?.laptops || []),
     ...(products?.headsets || []),
     ...(products?.phones || []),
     ...(products?.sneakers || []),
   ];
-
-  // 3️⃣ Shuffle randomly and select 8 products
+  
+  // Shuffle randomly and select 8 products
   const randomProducts = allProducts.sort(() => 0.5 - Math.random()).slice(0, 8);
 
   return (

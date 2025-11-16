@@ -33,6 +33,16 @@ export const ShopProvider = ({ children }) => {
     return cartItems.reduce((total, item) => total + item.quantity, 0);
   };
 
+  const increaseCount = () =>{
+    
+    
+  }
+
+  const decreaseCount = () =>{
+
+
+  }
+
   return (
     <ShopContext.Provider value={{ products, cartItems, addToCart, removeFromCart, getCartCount }}>
       {children}

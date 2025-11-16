@@ -1,6 +1,7 @@
 import React, { useContext } from 'react';
 import { ShopContext } from '../context/shopContext';
 import { Link } from 'react-router-dom';
+import DeleteForeverIcon from '@mui/icons-material/DeleteForever';
 
 const CartPage = () => {
   const { cartItems, removeFromCart } = useContext(ShopContext);
@@ -24,9 +25,17 @@ const CartPage = () => {
                   <p>${item.price} × {item.quantity}</p>
                 </div>
               </div>
-              <button onClick={() => removeFromCart(item.id)} className="text-red-600 hover:underline">
-                Remove
+
+              <div className=" flex items-center gap-4">
+                <button className='bg-gray-400 rounded text-2xl px-4'>-</button>
+                <input type="text" className='w-8 py-1 outline-none rounded border-2 border-gray-400' />
+                <button className='bg-gray-400 rounded text-2xl px-4'>+</button>
+              </div>
+              <div className="">
+                <button onClick={() => removeFromCart(item.id)} className="text-red-600 hover:underline">
+                <DeleteForeverIcon />
               </button>
+              </div>
             </div>
           ))}
         </div>
