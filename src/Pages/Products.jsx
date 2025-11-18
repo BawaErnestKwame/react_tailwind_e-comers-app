@@ -45,7 +45,7 @@ const Products = () => {
 
             <div className="flex justify-between items-center mt-3">
               <p className="text-yellow-500 text-sm">{item.rating} ⭐</p>
-              <button className="bg-orange-500 px-4 py-1 rounded text-white font-normal hover:bg-orange-600 transition">
+              <button onClick={()=>addToCart(item)} className="bg-orange-500 px-4 py-1 rounded text-white font-normal hover:bg-orange-600 transition">
                 Add to Cart +
               </button>
             </div>
