@@ -86,7 +86,7 @@ const Home = () => {
               >
                 {/* TEXT CONTENT */}
                 <div className="w-full md:w-1/2 lg:w-[45%] text-center md:text-left 
-                                flex flex-col justify-center space-y-3 sm:space-y-4 md:space-y-5">
+                                flex flex-col justify-center space-y-1 sm:space-y-1 md:space-y-5">
                   <h1 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl 
                                  font-bold leading-tight lg:leading-tight xl:leading-tight
                                  px-2 md:px-0">

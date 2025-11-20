@@ -54,7 +54,7 @@ const Navbar = () => {
       )}
 
       {/* Right Side Buttons */}
-      <div className="flex items-center gap-4">
+      <div className="flex items-center gap-6 md:gap-4">
         <Link to="/signup">
           <button className=" hidden md:flex text-sm px-3 py-1 rounded hover:bg-gray-100">
             SignUp
