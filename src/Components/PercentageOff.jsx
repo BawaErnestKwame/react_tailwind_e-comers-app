@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom'
 const PercentageOff = () => {
   return (
     <div className='flex px-4 md:px-8 lg:px-24 items-center bg-slate-200 py-16 gap-48'>
-        <div className=" w-1/2 flex flex-col">
+        <div className=" w-full md:w-1/2 flex flex-col">
             <h1 className='text-6xl font-bold '>30% - OFF</h1>
             <p className='text-sm py-1'>From every Product bought</p>
             <div className="">

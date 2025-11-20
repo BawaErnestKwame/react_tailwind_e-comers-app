@@ -18,7 +18,7 @@ const Subscribe = () => {
       ></div>
 
       {/* Content Layer */}
-      <div className='flex flex-col-reverse md:flex-row items-center relative z-10 px-6 py-10 md:px-16 md:py-14'>
+      <div className='flex flex-col md:flex-row items-center relative z-10 px-6 py-10 md:px-16 md:py-14'>
 
         {/* Text Section */}
         <div className="w-full md:w-1/2 space-y-4 text-slate-800">

@@ -7,7 +7,7 @@ const Login = () => {
     <div className='flex flex-col md:flex-row px-4 md:px-16 lg:px-24 gap-8 items-center justify-center w-full h-full mt-32'>
       
       {/* Left Image */}
-      <div className="w-full md:w-1/2">
+      <div className=" hidden md:flex w-full md:w-1/2">
         <img src={image} alt="Sign Up" className='w-full object-contain h-[70vh]'/>
       </div>
 

@@ -11,7 +11,7 @@ const Category = () => {
         <h2 className="text-gray-600">OUR TOP CATEGORIES</h2>
       </div>
 
-      <div className="flex gap-10 mt-6 text-gray-600 font-medium cursor-pointer">
+      <div className="flex gap-5 md:gap-10 mt-6 text-gray-600 font-medium cursor-pointer">
         <NavLink
           to="/"
           end

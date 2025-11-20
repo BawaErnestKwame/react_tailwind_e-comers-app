@@ -3,14 +3,14 @@ import image from '../assets/contact-img.png';
 
 const Contact = () => {
   return (
-    <div className="flex flex-col md:flex-row items-center justify-center min-h-screen bg-gray-100 px-6 py-10 gap-20">
+    <div className="flex flex-col md:flex-row items-center justify-center min-h-screen bg-gray-100 px-6 py-10 gap-8 md:gap-20">
       
       {/* Left side - Image */}
       <div className="w-full md:w-1/2 flex justify-center mb-8 md:mb-0">
         <img 
           src={image} 
           alt="Contact Us" 
-          className="w-1/2 max-w-md rounded-2xl hover:scale-105 transition-transform duration-300"
+          className=" w-full md:w-1/2 max-w-md rounded-2xl hover:scale-105 transition-transform duration-300"
         />
       </div>
 

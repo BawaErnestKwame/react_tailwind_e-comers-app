@@ -41,7 +41,7 @@ const Home = () => {
 
   return (
     <>
-      <div className="w-full overflow-hidden relative h-auto  md:h-[80vh] -z-20 mt-20">
+      <div className="w-full overflow-hidden relative h-auto  md:h-[80vh] -z-20 mt-8  md:mt-20">
 
         {/*  Slider Container */}
         <div
