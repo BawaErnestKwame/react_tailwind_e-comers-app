@@ -1,5 +1,6 @@
 import React, { useContext } from "react";
 import { ShopContext } from "../context/shopContext";
+import SearchIcon from '@mui/icons-material/Search';
 
 const Products = () => {
   const { products, addToCart } = useContext(ShopContext);
@@ -17,7 +18,7 @@ const Products = () => {
   return (
     <div className="px-4 md:px-14 lg:px-24 py-6 w-full mt-20">
       {/* ---------- Section Header ---------- */}
-      <div className="flex justify-between items-center mb-6">
+      <div className="flex justify-between items-center mb-6 flex-col">
         <div className="flex text-center flex-col w-full justify-center items-center">
           <h1 className="text-orange-500 font-bold text-sm">PRODUCTS</h1>
           <h2 className="text-gray-900 text-3xl font-semibold mt-2 underline">
@@ -28,6 +29,12 @@ const Products = () => {
             to stylish sneakers. Every product is chosen just for you!
           </p>
         </div>
+             <div className="flex items-center border rounded-full mt-8 overflow-hidden shadow-sm max-w-xs w-full">
+                <input type="text" placeholder='Search for product...' className='px-4 py-2 tracking-widest w-full border-slate-800 outline-none text-sm' />
+                <button className='bg-orange-600 text-white px-4 py-2 hover:bg-orange-700'>
+                  <SearchIcon />
+                </button>
+              </div>
       </div>
 
       {/* ---------- Product Grid ---------- */}

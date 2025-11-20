@@ -41,7 +41,7 @@ const Home = () => {
 
   return (
     <>
-      <div className="w-full overflow-hidden relative h-[80vh] -z-20 mt-20">
+      <div className="w-full overflow-hidden relative h-auto  md:h-[80vh] -z-20 mt-20">
 
         {/*  Slider Container */}
         <div
@@ -51,10 +51,10 @@ const Home = () => {
           {heroSlides.map((product, id) => (
             <div
               key={id}
-              className="min-w-full flex justify-between gap-10 px-10 bg-slate-800 text-white"
+              className="min-w-full flex justify-between items-center gap-10 px-10 bg-slate-800 text-white"
             >
               <div className="w-1/2 mt-32">
-                <h1 className="text-5xl font-bold mb-2 leading-tight">{product.title}</h1>
+                <h1 className="md:text-5xl font-bold mb-2 leading-tight">{product.title}</h1>
                 <p className="text-xl font-semibold mb-1 text-orange-600">{product.name}</p>
                 <p className="text-md">{product.description}</p>
               </div>
