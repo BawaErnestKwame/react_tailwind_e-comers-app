@@ -70,7 +70,7 @@ const Home = () => {
   return (
     <>
       {/* HERO SLIDER */}
-      <div className="w-full overflow-hidden relative bg-slate-800 mt-12 md:mt-16 lg:mt-20">
+      <div className="w-full overflow-hidden relative bg-slate-800 mt-16 md:mt-16 lg:mt-20">
         {/* Container with proper height for all screen sizes */}
         <div className="h-[500px] sm:h-[550px] md:h-[600px] lg:h-[650px] xl:h-[70vh]">
           <div
@@ -81,7 +81,7 @@ const Home = () => {
               <div
                 key={id}
                 className="min-w-full h-full flex flex-col-reverse md:flex-row items-center 
-                           justify-between gap-4 sm:gap-6 md:gap-8 lg:gap-12 
+                           justify-between gap-4 sm:gap-1 md:gap-8 lg:gap-12 
                            px-4 sm:px-6 md:px-10 lg:px-16 xl:px-20 
                            py-6 sm:py-8 md:py-10 lg:py-12 text-white"
               >

@@ -47,7 +47,7 @@ const SignUp = () => {
   };
 
   return (
-    <div className='flex flex-col md:flex-row px-4 md:px-16 lg:px-24 gap-8 items-center justify-center w-full h-full mt-32'>
+    <div className='flex flex-col md:flex-row px-4 md:px-16 lg:px-24 gap-8 items-center justify-center w-full h-full mt-32 mb-6'>
       
       {/* Left Image */}
       <div className="w-full md:w-1/2 hidden md:flex">
