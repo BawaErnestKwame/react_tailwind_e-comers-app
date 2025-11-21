@@ -7,6 +7,9 @@ export const ShopProvider = ({ children }) => {
   const [products] = useState(productsData);
   const [cartItems, setCartItems] = useState([]);
 
+  // 🔍 Search term for filtering
+  const [searchTerm, setSearchTerm] = useState("");
+
   // ➕ Add to cart
   const addToCart = (product) => {
     setCartItems((prevCart) => {
@@ -24,12 +27,12 @@ export const ShopProvider = ({ children }) => {
     });
   };
 
-  // ➖ Remove item completely
+  // ➖ Remove item
   const removeFromCart = (id) => {
     setCartItems((prevCart) => prevCart.filter((item) => item.id !== id));
   };
 
-  // 🔺 Increase quantity
+  // 🔺 Increase qty
   const increaseCount = (id) => {
     setCartItems((prevCart) =>
       prevCart.map((item) =>
@@ -40,7 +43,7 @@ export const ShopProvider = ({ children }) => {
     );
   };
 
-  // 🔻 Decrease quantity (remove item if quantity goes to 0)
+  // 🔻 Decrease qty
   const decreaseCount = (id) => {
     setCartItems((prevCart) =>
       prevCart
@@ -53,7 +56,7 @@ export const ShopProvider = ({ children }) => {
     );
   };
 
-  // 🧮 Total quantity in cart
+  // 🧮 Cart count
   const getCartCount = () => {
     return cartItems.reduce((total, item) => total + item.quantity, 0);
   };
@@ -74,6 +77,8 @@ export const ShopProvider = ({ children }) => {
         decreaseCount,
         getCartCount,
         getCartTotal,
+        searchTerm,
+        setSearchTerm,
       }}
     >
       {children}

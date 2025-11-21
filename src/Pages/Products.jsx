@@ -3,7 +3,7 @@ import { ShopContext } from "../context/shopContext";
 import SearchIcon from '@mui/icons-material/Search';
 
 const Products = () => {
-  const { products, addToCart } = useContext(ShopContext);
+  const { products, addToCart, searchTerm, setSearchTerm } = useContext(ShopContext);
 
   const allProducts = [
     ...(products?.laptops || []),
@@ -11,12 +11,18 @@ const Products = () => {
     ...(products?.phones || []),
     ...(products?.sneakers || []),
   ];
-  
-  // Shuffle randomly and select 8 products
-  const randomProducts = allProducts.sort(() => 0.5 - Math.random()).slice(0, 8);
+
+  // 🔍 Filter products based on search
+  const filteredProducts = allProducts.filter((item) =>
+    item.name.toLowerCase().includes(searchTerm.toLowerCase())
+  );
+
+  // Random 8 from filtered list
+  const randomProducts = filteredProducts.sort(() => 0.5 - Math.random()).slice(0, 8);
 
   return (
     <div className="px-4 md:px-14 lg:px-24 py-6 w-full mt-20">
+
       {/* ---------- Section Header ---------- */}
       <div className="flex justify-between items-center mb-6 flex-col">
         <div className="flex text-center flex-col w-full justify-center items-center">
@@ -25,39 +31,59 @@ const Products = () => {
             OUR TOP PICKS
           </h2>
           <p className="text-gray-500 mt-2 max-w-xl text-center">
-            Explore a handpicked selection of our most popular tech items — from sleek laptops
-            to stylish sneakers. Every product is chosen just for you!
+            Explore a handpicked selection of our most popular tech items.
           </p>
         </div>
-             <div className="flex items-center border rounded-full mt-8 overflow-hidden shadow-sm max-w-xs w-full">
-                <input type="text" placeholder='Search for product...' className='px-4 py-2 tracking-widest w-full border-slate-800 outline-none text-sm' />
-                <button className='bg-orange-600 text-white px-4 py-2 hover:bg-orange-700'>
-                  <SearchIcon />
-                </button>
-              </div>
+
+        {/* 🔍 SEARCH BAR */}
+        <div className="flex items-center border rounded-full mt-8 overflow-hidden shadow-sm max-w-xs w-full">
+          <input
+            type="text"
+            placeholder="Search for product..."
+            className="px-4 py-2 tracking-widest w-full border-slate-800 outline-none text-sm"
+            value={searchTerm}
+            onChange={(e) => setSearchTerm(e.target.value)}
+          />
+          <button className="bg-orange-600 text-white px-4 py-2 hover:bg-orange-700">
+            <SearchIcon />
+          </button>
+        </div>
       </div>
 
       {/* ---------- Product Grid ---------- */}
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
-        {randomProducts.map((item) => (
-          <div key={item.id} className="border p-4 rounded-xl shadow hover:shadow-lg transition">
-            <img
-              src={item.image}
-              alt={item.name}
-              className="w-full h-48 object-cover rounded-lg"
-            />
-            <h2 className="text-lg font-semibold mt-2">{item.name}</h2>
-            <p className="text-sm text-gray-500">{item.category}</p>
-            <p className="mt-2 text-gray-500">${item.price}</p>
 
-            <div className="flex justify-between items-center mt-3">
-              <p className="text-yellow-500 text-sm">{item.rating} ⭐</p>
-              <button onClick={()=>addToCart(item)} className="bg-orange-500 px-4 py-1 rounded text-white font-normal hover:bg-orange-600 transition">
-                Add to Cart +
-              </button>
+        {randomProducts.length > 0 ? (
+          randomProducts.map((item) => (
+            <div
+              key={item.id}
+              className="border p-4 rounded-xl shadow hover:shadow-lg transition"
+            >
+              <img
+                src={item.image}
+                alt={item.name}
+                className="w-full h-48 object-cover rounded-lg"
+              />
+
+              <h2 className="text-lg font-semibold mt-2">{item.name}</h2>
+              <p className="text-sm text-gray-500">{item.category}</p>
+              <p className="mt-2 text-gray-500">${item.price}</p>
+
+              <div className="flex justify-between items-center mt-3">
+                <p className="text-yellow-500 text-sm">{item.rating} ⭐</p>
+                <button
+                  onClick={() => addToCart(item)}
+                  className="bg-orange-500 px-4 py-1 rounded text-white hover:bg-orange-600 transition"
+                >
+                  Add to Cart +
+                </button>
+              </div>
             </div>
-          </div>
-        ))}
+          ))
+        ) : (
+          <p className="text-center text-gray-500 w-full">No products found</p>
+        )}
+
       </div>
     </div>
   );
