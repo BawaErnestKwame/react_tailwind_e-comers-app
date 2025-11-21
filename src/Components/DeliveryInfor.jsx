@@ -11,6 +11,7 @@ const services = [
     title: 'Free Delivery',
     description: 'Order from all items'
   },
+  
   {
     icon: <DiscountIcon className='text-orange-700' />,
     title: 'Discount Offers',

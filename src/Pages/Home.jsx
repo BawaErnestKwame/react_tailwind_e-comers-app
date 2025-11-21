@@ -8,6 +8,7 @@ import keyboard from "../assets/headerimage6.png";
 import DeliveryInfor from "../Components/DeliveryInfor";
 import Category from "../Category/Category";
 import Contact from "../Components/Contact";
+import { Link } from "react-router-dom";
 
 const heroSlides = [
   {
@@ -105,6 +106,7 @@ const Home = () => {
                   </p>
 
                   {/* Optional CTA Button */}
+                 <Link to='/products'>
                   <div className="pt-2 sm:pt-3 md:pt-4">
                     <button className="bg-orange-600 hover:bg-orange-700 
                                      text-white font-semibold 
@@ -116,7 +118,9 @@ const Home = () => {
                       Shop Now
                     </button>
                   </div>
+                  </Link>
                 </div>
+                 
 
                 {/* IMAGE */}
                 <div className="w-full md:w-1/2 lg:w-[45%] flex justify-center items-center">

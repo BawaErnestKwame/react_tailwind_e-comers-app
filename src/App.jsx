@@ -13,6 +13,7 @@ import Phones from './Category/Phones';
 import Sneakers from './Category/Sneakers';
 import Footer from './Components/Footer';
 import CartPage from './Pages/CartPage';
+import ScrollToTop from './Components/ScrollToTop';
 
 import { AnimatePresence, motion } from "framer-motion";
 
@@ -22,6 +23,7 @@ const App = () => {
   return (
     <>
       <Navbar />
+        <ScrollToTop />
 
       {/* Page Transition Animation */}
       <AnimatePresence mode="wait">
@@ -33,6 +35,7 @@ const App = () => {
           transition={{ duration: 0.4, ease: "easeInOut" }}
         >
           <Routes location={location}>
+           
             <Route path='/' element={<Home />}>
               <Route index element={<Laptops />} />
               <Route path='headsets' element={<HeadSets />} />
